@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/black">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/small_app_bg"
+            android:paddingLeft="@dimen/small_app_title_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@mipmap/cancel_icon"
+                android:drawablePadding="8dp"
+                android:text="@string/small_app_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_app_title_size" />
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:paddingLeft="@dimen/small_app_title_padding"
+        android:paddingRight="@dimen/small_app_title_padding"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/status_label_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/small_app_title_size"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:text="状态："/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/status_label_tv">
+
+                <TextView
+                    android:id="@+id/status_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:textSize="@dimen/small_app_title_size"
+                    android:textColor="@color/title_gray"
+                    android:singleLine="true"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/arrow_bottom"
+                    android:gravity="center_vertical"
+                    android:text="全部"/>
+
+            </FrameLayout>
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="32dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_gravity="center_vertical"
+            android:background="#ccc7c7"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/category_label_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/small_app_title_size"
+                android:textColor="@color/black"
+                android:text="类别："/>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/category_label_tv">
+
+                <TextView
+                    android:id="@+id/category_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:textSize="@dimen/small_app_title_size"
+                    android:textColor="@color/title_gray"
+                    android:singleLine="true"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/arrow_bottom"
+                    android:gravity="center_vertical"
+                    android:text="全部"/>
+
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#ebebeb" />
+
+    <ListView
+        android:id="@+id/small_app_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#ebebeb"
+        android:dividerHeight="3dp"
+        android:cacheColorHint="@android:color/transparent" />
+
+</LinearLayout>

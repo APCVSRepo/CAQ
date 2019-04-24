@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c7eb2"
+    android:orientation="vertical">
+
+    <include layout="@layout/back_icon_title" />
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="82dp">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="15dp">]-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/temperature_tv"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="5"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="40sp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_marginTop="4dp"-->
+                    <!--android:layout_toRightOf="@id/temperature_tv"-->
+                    <!--android:text="o"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="18sp" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="6dp"-->
+                <!--android:lineSpacingExtra="3dp"-->
+                <!--android:gravity="left"-->
+                <!--android:text="湿度80%\n北风2级"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="14sp" />-->
+
+
+        <!--</LinearLayout>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:lineSpacingExtra="3dp"-->
+            <!--android:layout_marginRight="14dp"-->
+            <!--android:gravity="left"-->
+            <!--android:text="洗车指数  4\n适宜洗车"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="14sp" />-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="#2873a2" />-->
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp">
+
+        <FrameLayout
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/search_device_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/search_device_bg" />
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/search_device_center_bg" />
+
+            <TextView
+                android:id="@+id/search_label_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="点击搜索"
+                android:textColor="#44ffffff"
+                android:textSize="15sp" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/search_fail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="未搜索到设备"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:textColor="#75ffffff"
+            android:gravity="center"
+            android:text="请确认设备蓝牙已经打开，点击按键重新搜索。"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/device_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:scrollbars="none"
+        android:visibility="gone"
+        android:divider="#23658e"
+        android:dividerHeight="1px"
+        android:cacheColorHint="@android:color/transparent"
+        android:background="#276f9c">
+
+    </ListView>
+
+</LinearLayout>

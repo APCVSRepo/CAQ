@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:paddingBottom="60dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/layout_round_white"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:background="@drawable/pm_corners_bg"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="PM2.5"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColor="#b0b0b0"
+        android:textSize="14sp"
+        android:text="中国环境环保局标准"/>
+    <TextView
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:background="@drawable/pm_current"
+        android:text="0-35"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:textColor="#939393"
+        android:text="空气质量良好"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/pm_1"
+                android:textSize="14sp"
+                android:text="36-75"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:textColor="#939393"
+                android:textSize="14sp"
+                android:text="空气质量正常"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:background="@drawable/pm_2"
+                android:text="76-115"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:textColor="#939393"
+                android:textSize="14sp"
+                android:text="轻度污染"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:background="@drawable/pm_3"
+                android:text="116-150"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:textSize="14sp"
+                android:textColor="#939393"
+                android:text="中度污染"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:background="@drawable/pm_4"
+                android:text="151-250"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:textColor="#939393"
+                android:textSize="14sp"
+                android:text="重度污染"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:background="@drawable/pm_5"
+                android:text="251-350"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:textColor="#939393"
+                android:textSize="14sp"
+                android:text="严重污染"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:background="@drawable/pm_6"
+                android:text="351以上"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:textSize="14sp"
+                android:textColor="#939393"
+                android:text="不宜人类生存"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

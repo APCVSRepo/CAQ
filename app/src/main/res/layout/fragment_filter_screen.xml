@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/back_icon_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:gravity="center_horizontal"
+                android:text="20%建议更换滤网"
+                android:textColor="#63abd9"
+                android:textSize="16sp" />
+
+            <com.ford.cvs.caq.client.widget.DashboardView
+                android:id="@+id/dashboardView"
+                android:layout_width="320dp"
+                android:layout_height="320dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:text=" "
+                android:textSize="30sp"
+                app:backgroundColor="#f7f7f7"
+                app:endProgressColor="#13ed03"
+                app:maxNumber="100"
+                app:progressStrokeWidth="8dp"
+                app:startNumber="0"
+                app:startProgressColor="@color/colorAccent"
+                app:unit="%" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-85dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#e1e1e1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:gravity="center_horizontal"
+                    android:text="滤网介绍"
+                    android:textColor="#63abd9"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:lineSpacingExtra="13dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="45dp"
+                    android:paddingRight="45dp"
+                    android:text=" 汽车空调过滤网是3M公司在中国新上市的产品，传统的汽车过滤网结构致密，不但在使用时会使空调风量骤降，还会在使用较短的时间后即堵塞，造成过滤网的频繁更换。另外，如果所选择的过滤网并不能有效过滤各种固体微粒、有害气体，也就从某种程度上显得如同虚设。在过滤网的选择上，首先要考虑其具有高..."
+                    android:textColor="#989898"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+
